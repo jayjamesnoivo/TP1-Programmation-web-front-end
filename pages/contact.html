@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../images/logo.png" alt="Logo Planétarium Montréal" class="brand"></a>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="planetes.html">Planètes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrapper">
+    <h1>Contact</h1>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Nous écrire</legend>
+
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="sujet">Sujet</label>
+        <select id="sujet" name="sujet" required>
+          <option value="">— Sélectionner —</option>
+          <option value="infos">Infos visites</option>
+          <option value="scolaires">Scolaires</option>
+          <option value="privatisation">Privatisation</option>
+          <option value="autre">Autre</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <label>
+          <input type="checkbox" id="rgpd" required>
+          J'accepte que mes données soient traitées pour répondre à ma demande.
+        </label>
+
+        <button type="submit">Envoyer</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    © 2025 Planétarium Montréal — Tous droits réservés.
+  </footer>
+</body>
+</html>
